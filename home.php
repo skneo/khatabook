@@ -60,8 +60,8 @@ if (!isset($_SESSION['loggedin'])) {
     ?>
     <center>
         <div class="mt-3">
-            <span id="get_money" class="text-success" style="font-size: 20px;">You will get Rs 0</span> &
-            <span id="give_money" class="text-danger" style="font-size: 20px;">You will give Rs 0</span>
+            <span id="get_money" class="text-success me-2" style="font-size: 20px;">Get &#8377; 0</span> &
+            <span id="give_money" class="text-danger  ms-2" style="font-size: 20px;">Give &#8377; 0</span>
         </div>
         <hr>
         <!-- Button trigger modal -->
@@ -134,8 +134,8 @@ if (!isset($_SESSION['loggedin'])) {
                     $getFormat = number_format($get);
                     mysqli_close($con);
                     echo "<script> 
-                            document.getElementById('get_money').innerHTML='You will get Rs $getFormat';
-                            document.getElementById('give_money').innerHTML='You will give Rs $giveFormat';
+                            document.getElementById('get_money').innerHTML='Get &#8377; $getFormat';
+                            document.getElementById('give_money').innerHTML='Give &#8377; $giveFormat';
                         </script>"
                     ?>
                 </tbody>

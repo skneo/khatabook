@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2022 at 05:00 AM
+-- Generation Time: Aug 27, 2022 at 08:26 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -40,7 +40,7 @@ CREATE TABLE `enjoyers` (
 --
 
 INSERT INTO `enjoyers` (`username`, `password`, `pwdChangeOn`, `last_login`, `login_ip`) VALUES
-('user', '$2y$10$ApSty6PmbAhmdghAdeN2QO7KQN.noOZjA9/seO1Kzwhgwu2GxVz7q', '2022-08-27 08:28:19', '2022-08-27 08:29:47', '::1');
+('user', '$2y$10$ApSty6PmbAhmdghAdeN2QO7KQN.noOZjA9/seO1Kzwhgwu2GxVz7q', '2022-08-27 08:28:19', '2022-08-27 11:53:49', '::1');
 
 -- --------------------------------------------------------
 
@@ -89,6 +89,16 @@ ALTER TABLE `khatabook_all_cust`
 --
 ALTER TABLE `khatabook_statements`
   ADD PRIMARY KEY (`trans_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `khatabook_statements`
+--
+ALTER TABLE `khatabook_statements`
+  MODIFY `trans_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
