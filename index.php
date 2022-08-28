@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $ip_address = $_SERVER['REMOTE_ADDR'];
         date_default_timezone_set('Asia/Kolkata');
         $curr_date = date('Y-m-d H:i:s');
-        if ($username != "trinity" && ($username == $username1) && password_verify($password, $passwordHash)) {
+        if ($username == $username1 && password_verify($password, $passwordHash)) {
             $sql = "UPDATE `enjoyers` SET `last_login`='$curr_date', `login_ip`='$ip_address' WHERE `username`='$username'";
             $result = mysqli_query($con, $sql); // or trigger_error("Query Failed! SQL: $sql - Error: " . mysqli_error($con), E_USER_ERROR);
             $_SESSION['loggedin'] = true;

@@ -1,2 +1,2 @@
 # khatabook
-keep record of money borrowed and lent
+keeps record of money borrowed and lent
