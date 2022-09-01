@@ -1,6 +1,6 @@
 <?php
 session_start();
-//to change password without login, comment below 3 lines, line 14 and line 51
+//to change password without login, comment below 3 lines
 if (!isset($_SESSION['loggedin'])) {
     header('Location: index.php');
 }
